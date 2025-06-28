@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us - Bireshwar Cold Storage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="header">
+      <div class="logo">
+        <h1>Bireshwar Cold Storage</h1>
+      </div>
+      <!-- Menu Button for Mobile -->
+<div class="menu-toggle" onclick="toggleMenu()">
+  ☰
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar" id="mobileMenu">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="notices.html">Notices</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <p>If you have any inquiries or need assistance, feel free to reach out to us using the form below. We'll get back to you as soon as possible!</p>
+     
+      <div class="contact-form">
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="user_name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="user_email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Send Message</button>
+      </div>
+
+      <div id="form-message" class="message" style="display: none;"></div>
+    </form>
+  </div>
+
+      <div class="con">
+         <p><i class="fa-solid fa-paper-plane"></i>palsourav1988@gmail.com / bireshwar1988@gmail.com</p>
+         <p><i class="fa-solid fa-phone"></i>09732147172 / 09434006145</p>
+         <p><i class="fa-solid fa-location-dot"></i>Kotulpur, Bankura, WB-722141, India </p>
+      </div>
+    </div>
+    <div class="direction">
+       <a href="https://www.google.com/maps/place/Bireswar+Cold+Storage/@23.009629,87.6067594,17z/data=!3m1!4b1!4m6!3m5!1s0x39f82192fa2ad6cb:0xcd1f2aae72fbdca9!8m2!3d23.009629!4d87.6067594!16s%2Fg%2F11f_0wrfy0?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D" class="btn btn2">Get direction</a>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>&copy; 2025 Bireshwar Cold Storage. All rights reserved.</p>
+      <p> ❤️ Made  Subham ❤️ </p>
+    </div>
+
+  </div>
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.navbar nav');
+    menu.classList.toggle('show');
+  }
+</script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("t1E_p7WNv_yjh6NEf"); // Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_wcg4lbk', 'template_kppe2zs', this)
+        .then(function() {
+          showMessage('Your message has been sent successfully!', 'success');
+          document.getElementById('contact-form').reset();
+        }, function(error) {
+          showMessage('Failed to send message. Error: ' + JSON.stringify(error), 'error');
+        });
+    });
+
+    function showMessage(msg, type) {
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.style.display = 'block';
+      messageDiv.textContent = msg;
+      messageDiv.className = 'message ' + type;
+    }
+  </script>
+
+
+</body>
+</html>
