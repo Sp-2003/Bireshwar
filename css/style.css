@@ -13,6 +13,10 @@ body {
   background-color: #f4f4f4;
 }
 
+button{
+  font-family: 'poppins', sans-serif;
+}
+
 .header {
   background-color: #09e1f1;
   color: white;
@@ -97,6 +101,18 @@ body {
   background-color: #e6e6e6;
 }
 
+/* Welcome Section */
+.welcome{
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.welcome h3{
+  font-size: 32px;
+  color: #065535;
+}
+
 /* Features Section */
 .features {
   display: flex;
@@ -104,6 +120,7 @@ body {
   justify-content: space-between;
   gap: 20px;
   padding: 40px 20px;
+  background-color: #ffffff;
 }
 
 .feature-box {
@@ -114,6 +131,11 @@ body {
   border-left: 5px solid #065535;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.feature-box:hover{
+  transform: translateY(-5px);
 }
 
 .feature-box h3 {
@@ -156,15 +178,10 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* Main Content */
-.main-content {
-  padding: 40px 20px;
-}
 
 .about-section {
   background: white;
   padding: 30px;
-  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -194,6 +211,11 @@ nav a.active {
   padding: 20px;
   border-left: 5px solid #065535;
   border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.mission:hover, .vision:hover{
+  transform: translateY(-5px);
 }
 
 .mission h3,
@@ -214,7 +236,6 @@ nav a.active {
 .services-section {
   padding: 40px 20px;
   background-color: #ffffff;
-  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -254,7 +275,6 @@ nav a.active {
 .notices-section {
   padding: 40px 20px;
   background-color: #ffffff;
-  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -306,7 +326,6 @@ nav a.active {
 .contact-section {
   padding: 40px 20px;
   background-color: #ffffff;
-  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -375,7 +394,7 @@ nav a.active {
 
 .direction {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .con p {
@@ -456,11 +475,6 @@ nav a.active {
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-
-  /* About Section */
-  .main-content {
-    padding: 20px 10px;
   }
 
   .about-section {
