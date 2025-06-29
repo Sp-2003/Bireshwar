@@ -187,7 +187,8 @@ nav a.active {
 
 .about-section h2 {
   color: #065535;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .about-section p {
