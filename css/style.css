@@ -13,7 +13,7 @@ body {
   background-color: #f4f4f4;
 }
 
-button{
+button {
   font-family: 'poppins', sans-serif;
 }
 
@@ -102,13 +102,13 @@ button{
 }
 
 /* Welcome Section */
-.welcome{
+.welcome {
   background-color: #ffffff;
   text-align: center;
   padding: 10px 0;
 }
 
-.welcome h3{
+.welcome h3 {
   font-size: 32px;
   color: #065535;
 }
@@ -134,7 +134,7 @@ button{
   transition: transform 0.2s;
 }
 
-.feature-box:hover{
+.feature-box:hover {
   transform: translateY(-5px);
 }
 
@@ -215,7 +215,8 @@ nav a.active {
   transition: transform 0.2s;
 }
 
-.mission:hover, .vision:hover{
+.mission:hover,
+.vision:hover {
   transform: translateY(-5px);
 }
 
@@ -422,6 +423,18 @@ nav a.active {
   margin-top: 60px;
   margin-bottom: 120px;
 
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.map h3,
+.map p {
+  text-align: right;
 }
 
 @media only screen and (max-width: 768px) {

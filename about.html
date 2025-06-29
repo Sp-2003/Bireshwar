@@ -1,79 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>About Us - Bireshwar Cold Storage</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="container">
+    <title>About Us - Bireshwar Cold Storage</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <div class="logo">
+          <h1>Bireshwar Cold Storage</h1>
+        </div>
+        <!-- Menu Button for Mobile -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <!-- Header Section -->
-    <div class="header">
-      <div class="logo">
-        <h1>Bireshwar Cold Storage</h1>
+        <!-- Navigation Bar -->
+        <div class="navbar" id="mobileMenu">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="notices.html">Notices</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
       </div>
-      <!-- Menu Button for Mobile -->
-<div class="menu-toggle" onclick="toggleMenu()">
-  ☰
-</div>
 
-<!-- Navigation Bar -->
-<div class="navbar" id="mobileMenu">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="services.html">Services</a>
-    <a href="notices.html">Notices</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</div>
-    </div>
+      <!-- Main Content Section -->
+      <div class="main-content">
+        <div class="about-section">
+          <h2>About Us</h2>
+          <p>
+            <strong>Bireshwar Cold Storage</strong> is one of the trusted names
+            in agricultural storage solutions, serving the farming community of
+            West Bengal since 1995.
+          </p>
 
-    <!-- Main Content Section -->
-    <div class="main-content">
-      <div class="about-section">
-        <h2>About Us</h2>
-        <p><strong>Bireshwar Cold Storage</strong> is one of the trusted names in agricultural storage solutions,
-          serving the farming community of West Bengal since 1995.</p>
+          <p>
+            We specialize in the cold storage of potatoes and other perishable
+            goods, ensuring their freshness and longevity. With a modern
+            facility, efficient management, and a commitment to quality, we help
+            farmers and traders reduce post-harvest loss and increase
+            profitability.
+          </p>
 
-        <p>We specialize in the cold storage of potatoes and other perishable goods, ensuring their freshness and
-          longevity. With a modern facility, efficient management, and a commitment to quality, we help farmers and
-          traders reduce post-harvest loss and increase profitability.</p>
-
-        <div class="mission-vision">
-          <div class="mission">
-            <h3>Our Mission</h3>
-            <p>To provide reliable, secure, and cost-effective storage solutions for agricultural produce, supporting
-              rural prosperity and food sustainability.</p>
-          </div>
-          <div class="vision">
-            <h3>Our Vision</h3>
-            <p>Becoming a leading agro-storage service in Eastern India with an emphasis on technology, transparency, and trust.</p>
+          <div class="mission-vision">
+            <div class="mission">
+              <h3>Our Mission</h3>
+              <p>
+                To provide reliable, secure, and cost-effective storage
+                solutions for agricultural produce, supporting rural prosperity
+                and food sustainability.
+              </p>
+            </div>
+            <div class="vision">
+              <h3>Our Vision</h3>
+              <p>
+                Becoming a leading agro-storage service in Eastern India with an
+                emphasis on technology, transparency, and trust.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="direction">
+        <a
+          href="https://www.google.com/maps/place/Bireswar+Cold+Storage/@23.009629,87.6067594,17z/data=!3m1!4b1!4m6!3m5!1s0x39f82192fa2ad6cb:0xcd1f2aae72fbdca9!8m2!3d23.009629!4d87.6067594!16s%2Fg%2F11f_0wrfy0?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D"
+          class="btn btn2"
+          >Get direction</a
+        >
+      </div>
+
+      <!-- Footer Section -->
+      <div class="footer">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.678530340065!2d87.60418447509144!3d23.009628979182896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f82192fa2ad6cb%3A0xcd1f2aae72fbdca9!2sBireswar%20Cold%20Storage!5e1!3m2!1sen!2sin!4v1751213502122!5m2!1sen!2sin"
+            width="400"
+            height="300"
+            style="border: 0; border-radius: 10px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="address">
+            <h3>Address</h3>
+            <p>Bireshwar Cold Storage</p>
+            <p>Near Millmore</p>
+            <p><strong>P.S. & P.O.: </strong>Kotulpur</p>
+            <p><strong>District: </strong>Bankura</p>
+            <p><strong>State: </strong>West Bengal - 722141</p>
+          </div>
+        </div>
+        <p>
+          &copy; <span id="year"></span> Bireshwar Cold Storage. All rights
+          reserved.
+        </p>
+        <p>❤️ Made by Subham ❤️</p>
+      </div>
     </div>
-    <div class="direction">
-       <a href="https://www.google.com/maps/place/Bireswar+Cold+Storage/@23.009629,87.6067594,17z/data=!3m1!4b1!4m6!3m5!1s0x39f82192fa2ad6cb:0xcd1f2aae72fbdca9!8m2!3d23.009629!4d87.6067594!16s%2Fg%2F11f_0wrfy0?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D" class="btn btn2">Get direction</a>
-    </div>
 
-    <!-- Footer Section -->
-    <div class="footer">
-      <p>&copy; 2025 Bireshwar Cold Storage. All rights reserved.</p>
-      <p> ❤️ Made by Subham ❤️ </p>
-    </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".navbar nav");
+        menu.classList.toggle("show");
+      }
 
-  </div>
-
-  <script>
-  function toggleMenu() {
-    const menu = document.querySelector('.navbar nav');
-    menu.classList.toggle('show');
-  }
-</script>
-
-</body>
+      //get the current year for the footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
