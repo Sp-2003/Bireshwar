@@ -436,7 +436,24 @@ nav a.active {
 .map p {
   text-align: right;
 }
-
+.explore h3{
+  padding: 10px 0;
+  text-align: center;
+}
+.explore a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px 0;
+}
+.explore a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.3s;
+}
 @media only screen and (max-width: 768px) {
 
   /* Header adjustments */
@@ -629,6 +646,32 @@ nav a.active {
     height: auto;
   }
 
+  .map {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .map iframe {
+    display: none;
+  }
+
+  .map h3,
+  .map p {
+    text-align: center;
+  }
+
+  .explore a {
+    display: inline-block; 
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+  .address h3{
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+
+
 
 }
 
@@ -653,6 +696,7 @@ nav a.active {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    right: 10px;
   }
 
   .navbar nav {
