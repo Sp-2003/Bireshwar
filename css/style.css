@@ -194,6 +194,7 @@ nav a.active {
 .about-section p {
   font-size: 16px;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Mission & Vision */
@@ -223,6 +224,11 @@ nav a.active {
 .mission h3,
 .vision h3 {
   color: #065535;
+}
+.mission p,
+.vision p {
+  text-align: left;
+
 }
 
 /* Footer */
